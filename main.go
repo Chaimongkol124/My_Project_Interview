@@ -55,5 +55,5 @@ func main() {
 	authorized.PUT("/comment/update", CommentController.UpdateComent)
 	authorized.DELETE("/comment/delete/:id", CommentController.DeleteComment)
 	authorized.GET("/historyInterview/readall/:interview_id", HsitoryInterviewController.ReadAllHistoryInteriews)
-	r.Run("localhost:8080")
+	r.Run()
 }

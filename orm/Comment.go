@@ -8,7 +8,7 @@ import (
 
 type Comment struct {
 	gorm.Model
-	Massage     string
+	Massage     string `gorm:"type:varchar(500) "`
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
 	UserID      float64

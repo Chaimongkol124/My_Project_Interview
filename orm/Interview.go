@@ -9,7 +9,7 @@ import (
 type Interview struct {
 	gorm.Model
 
-	Description string
+	Description string `gorm:"type:varchar(500) "`
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
 	Status      StausType `gorm:"type:ENUM('To Do', 'In Progress', 'Done')"`
