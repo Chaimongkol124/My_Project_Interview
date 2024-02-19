@@ -1,0 +1,35 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    container_name: godb
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'testdb'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - "3306:3306"
+    expose:
+      - '3306'
+    networks:
+      - app-network
+    volumes:
+      - my-db:/var/lib/mysql
+  api:
+    container_name: api_test_project
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+# Names our volume
+volumes:
+  my-db:
