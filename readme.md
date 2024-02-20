@@ -10,3 +10,6 @@ How to using program
  4. call service user login http://localhost:8080/login 
  5. call service interview create http://localhost:8080/api/interview/create
  6. call service comment create http://localhost:8080/api/comment/create
+
+My Database Design
+ 
