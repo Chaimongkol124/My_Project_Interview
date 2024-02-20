@@ -1,7 +1,10 @@
 How to install project
  1. clone repository this command git clone https://github.com/Chaimongkol124/My_Project_Interview.git
  2. install docker desktop
- 3. run program this command docker compose up -d
+ 3. run program this command
+    ```
+    docker compose up -d
+    ```
 
 How to using program
  1. install postman
