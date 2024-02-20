@@ -36,6 +36,9 @@ func main() {
 	if err != nil {
 		fmt.Print("Error loading .env file")
 	}
+	//wait service db started
+	time.Sleep(30 * time.Second)
+	fmt.Printf("delay service 30s")
 	orm.InitDb()
 	r := gin.Default()
 	r.Use(cors.Default())
