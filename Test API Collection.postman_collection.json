@@ -228,7 +228,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/interview/delete/2",
+							"raw": "http://localhost:8080/api/interview/delete/{{interviewID}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -238,7 +238,7 @@
 								"api",
 								"interview",
 								"delete",
-								"2"
+								"{{interviewID}}"
 							]
 						}
 					},
@@ -260,7 +260,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/interview/detail/2",
+							"raw": "http://localhost:8080/api/interview/detail/{{interviewID}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -270,7 +270,7 @@
 								"api",
 								"interview",
 								"detail",
-								"2"
+								"{{interviewID}}"
 							]
 						}
 					},
@@ -328,7 +328,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/comment/readall/2",
+							"raw": "http://localhost:8080/api/comment/readall/{{$interviewID}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -338,7 +338,7 @@
 								"api",
 								"comment",
 								"readall",
-								"2"
+								"{{$interviewID}}"
 							]
 						}
 					},
@@ -440,7 +440,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/comment/delete/2",
+							"raw": "http://localhost:8080/api/comment/delete/{{commentID}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -450,7 +450,7 @@
 								"api",
 								"comment",
 								"delete",
-								"2"
+								"{{commentID}}"
 							]
 						}
 					},
@@ -477,7 +477,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/historyInterview/readall/4",
+							"raw": "http://localhost:8080/api/historyInterview/readall/{{$interviewID}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -487,7 +487,7 @@
 								"api",
 								"historyInterview",
 								"readall",
-								"4"
+								"{{$interviewID}}"
 							]
 						}
 					},
