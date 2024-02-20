@@ -12,4 +12,4 @@ How to using program
  6. call service comment create http://localhost:8080/api/comment/create
 
 My Database Design
- 
+ ![alt text](https://github.com/Chaimongkol124/My_Project_Interview/blob/main/Design-Database.png)
