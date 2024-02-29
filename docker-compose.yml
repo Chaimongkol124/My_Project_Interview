@@ -19,13 +19,17 @@ services:
       - my-db:/var/lib/mysql
   api:
     container_name: api_test_project
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
+    depends_on:
+      - db
     ports:
       - "8080:8080"
     networks:
       - app-network
+    
 
 networks:
   app-network:
